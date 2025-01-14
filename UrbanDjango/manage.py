@@ -20,3 +20,10 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# pip install django                              # установка
+# django-admin startproject UrbanDjango           # создать проект
+# cd UrbanDjango                                  # перейти в папку
+# python manage.py runserver                      # запустить сервер
+# python manage.py startapp task                  # создать приложение

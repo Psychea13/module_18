@@ -9,6 +9,3 @@ def func_template(request):
 
 class ClassTemplate(TemplateView):
     template_name = 'second_task/class_template.html'
-
-
-# python manage.py runserver
