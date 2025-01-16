@@ -24,6 +24,6 @@ if __name__ == '__main__':
 
 # pip install django                              # установка
 # django-admin startproject UrbanDjango           # создать проект
+# python manage.py startapp task                  # создать приложение
 # cd UrbanDjango                                  # перейти в папку
 # python manage.py runserver                      # запустить сервер
-# python manage.py startapp task                  # создать приложение
