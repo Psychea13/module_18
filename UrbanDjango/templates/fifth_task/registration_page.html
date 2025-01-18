@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+    {% if info.error %}
+        <div class="error"><h2>{{ info.error }}</h2></div>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        <label for="username">Введите логин:</label>
+        <input type="text" id="username" name="username" maxlength="30" required>
+
+        <label for="password">Введите пароль:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+
+        <label for="repeat_password">Повторите пароль:</label>
+        <input type="password" id="repeat_password" name="repeat_password" minlength="8" required>
+
+        <label for="age">Введите свой возраст:</label>
+        <input type="number" id="age" name="age" maxlength="3 required">
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</body>
+</html>
